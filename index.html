@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1">
+        
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" / >
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <div class="base">
+                    <div class="enter">
+                        <h4>BMI Calculator</h4>
+                    </div>
+                    <div class="b">
+                        <p class="title">Gender</p>
+                        <input type="radio" name="Your Gender" id="mgender" required="required" value="Male"/>
+                        <label for="mgender" >Male</label>
+                        <input type="radio" name="Your Gender" id="fgender" required="required" value="Female">
+                        <label for="fgender" >Female</label>
+                    </div>
+                    <div class="block">
+                        <p class="title">Weight</p>
+                        <input type="number" name="weight" id="weight" 
+                        placeholder="Weight in kgs" required='required'/>
+                    </div>
+                    <div class="block">
+                        <p class="title">Height</p>
+                        <input type="number" name="number" id="height" placeholder="Height in meters"
+                         required="required"/>
+                    </div>
+                   <!--- <div class="block">
+                        <p class="title">Year</p>
+                        <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="4" maxlength="4"/>
+                    </div>-->
+                </div>
+                <div class="base">
+                    <div class="enter">
+                        <input type ="button" name="submit" value="Submit" onclick="bmi()"/>
+                        <input type="reset" onclick="clr()"/>
+                    </div>
+                </div>
+                <div id="bmi"></div>
+                <div id="idl"></div>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
